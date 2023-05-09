@@ -1,0 +1,1120 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.952);
+    color: #fff;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 1080px;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 90px;
+}
+
+header nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lilita One', cursive;
+    background: linear-gradient(to left, rgba(0,0,0,.1), rgba(0,0,0,0));
+    width: 100%;
+}
+
+header nav h2 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 20px;
+    transition: all 1s;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.1);
+}
+
+header .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    text-align: center;
+}
+
+header .textos h1 {
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 150px;
+}
+
+header .textos h4 {
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.main .menu {
+    margin-bottom: 150px;
+}
+
+.main .menu .contenedor h2 {
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 60px;
+    color: #ccc;
+    padding-bottom: 10px;
+    border-bottom: 2px solid ;
+    margin-bottom: 50px;
+}
+
+.main .menu .carousel {
+    margin: auto 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .menu .carousel .contenedor-foto {
+    width: 11.5%;
+    margin: 0px 5px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 2s ease;
+}
+
+.main .menu .carousel .contenedor-foto img {
+    width: 100%;
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+
+.main .menu .carousel .contenedor-foto .contenedor-parrafo {
+    background: #000;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .menu .carousel .contenedor-foto .contenedor-parrafo p {
+    font-family: 'Lilita One';
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main .menu .carousel .contenedor-foto:hover {
+    width: 100%;
+}
+
+.main .menu .carousel .contenedor-foto:hover > img {
+    height: 100%;
+}
+
+.main .menu .carousel .contenedor-foto:hover > .contenedor-parrafo {
+    height: 0%;
+    color: transparent;
+}
+
+.main .info {
+    margin-bottom: 150px;
+}
+
+.main .info .contenedor h2 {
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 60px;
+    color: #ccc;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid ;
+}
+
+.main .info .contenedor_parrafo p {
+    font-family: 'Noto Serif Hebrew';
+    font-weight: 300;
+    font-size: 18px;
+    color: #f2f2f2;
+    line-height: 34px;
+}
+
+.main .contacto {
+    margin-bottom: 100px;
+}
+
+.main .contacto .contenedor h2 {
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 60px;
+    color: #ccc;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+.main .contacto .contenedor .location {
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+}
+
+.main .contacto .contenedor .location .location-up {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.main .contacto .contenedor .location .location-up .social-media {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.main .contacto .contenedor .location .location-up .social-media h3 {
+    font-family: 'Noto Serif Hebrew';
+    font-size: 36px;
+    text-align: left;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes {
+    text-align: left;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul {
+    list-style: none;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li {
+    margin-bottom: 6px;
+    font-family: 'Noto Serif Hebrew';
+    font-size: 18px;
+    display: block;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Noto serif Hebrew';
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li a .i-instagram {
+    color: #833AB4;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .instagram:hover {
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    background: #833AB4;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .instagram:hover > i {
+    color: #fff;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li a .i-facebook {
+    color: #4267B2;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .facebook:hover {
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    background: #4267B2;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .facebook:hover > i {
+    color: #fff;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li p {
+    font-family: 'Noto serif Hebrew';
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 2s ease;
+    display: inline-block;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li p .i-whatsapp {
+    color: #25D366;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .whatsapp:hover {
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    background: #25D366;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .whatsapp:hover > i {
+    color: #fff;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .social-media .redes ul li .email:hover {
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    color: #000;
+    background: #ffffff;
+    transition: all 2s ease;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion {
+    width: 50%;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion h3 {
+    font-family: 'Noto Serif Hebrew';
+    font-size: 36px;
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda h4 {
+    margin-bottom: 10px;
+    font-family: 'Noto Serif Hebrew';
+    font-size: 22px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda p {
+    font-family: 'Noto Serif Hebrew';
+    font-size: 15px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha {
+    text-align: center;
+    padding: 0 80px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha h4 {
+    margin-bottom: 10px;
+    font-family: 'Noto Serif Hebrew';
+    font-size: 22px;
+    text-align: center;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Noto Serif Hebrew';
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .day {
+    color: #f3f3f3;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .left .day {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .rigth .day {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .left .hora,
+.main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .rigth .hora {
+    text-align: center;
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+.main .contacto .contenedor .location .form-maps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.main .contacto .contenedor .location .form-maps .izquierda {
+    width: 60%;
+}
+
+.main .contacto .contenedor .location .form-maps .izquierda iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha {
+    width: 35%;
+    height: 100%;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario {
+    margin: 20px;
+    padding: 20px 20px;
+    height: 90%;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario h3 {
+    font-family: 'Noto Serif Hebrew';
+    font-size: 26px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo {
+    position: relative;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo label {
+    font-family: 'Noto Serif Hebrew';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    transition: all .3s ease;
+    background-color: #fff;
+    padding: 0px 3px;
+    cursor: initial;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo input,
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo textarea {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Noto Serif Hebrew';
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo input:placeholder-shown + label,
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo textarea:placeholder-shown + label {
+    top: 10px;
+    background-color: transparent;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo input:focus,
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo textarea:focus {
+    border-color: #3366cc;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo input:focus + label,
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .grupo textarea:focus + label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 0px 6px;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .btn-enviar {
+    background: #0275d8;
+    outline: none;
+    width: 100%;
+    border: 1px solid #0275d8;
+    color: #fff;
+    font-family: 'Lilita One';
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario form .btn-enviar:hover {
+    background: #004797;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.main .galeria {
+    margin-bottom: 160px;
+}
+
+.main .galeria .contenedor h2 {
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 60px;
+    color: #ccc;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid ;
+}
+
+.main .galeria .contenedor-grid {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.main .galeria .contenedor-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.main .galeria .contenedor-grid .grid .foto {
+    background-image: url(img/jack_daniels.jpeg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    opacity: .7;
+    transition: all .4s ease;
+}
+
+.main .galeria .contenedor-grid .grid .foto:hover {
+    scale: 1.04;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.main .galeria .contenedor-grid .grid .uno {
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+.main .galeria .contenedor-grid .grid .dos {
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+.main .galeria .contenedor-grid .grid .tres {
+    grid-area: 1 / 4 / 3 / 7;
+}
+
+.main .galeria .contenedor-grid .grid .ocho {
+    grid-area: 3 / 3 / 3 / 5;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+footer p {font-family: 'Noto Serif Hebrew'; padding: 20px 0; background: rgba(0, 0, 0, 0.952);}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1600px) {
+    .main .menu .carousel .contenedor-foto {
+        width: 15%;
+        margin: 0px 5px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 2s ease;
+    }
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .main .galeria .contenedor-grid .grid .tres {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+
+    .main .galeria .contenedor-grid .grid .ocho {
+        grid-area: 3 / 3 / 5 / 5;
+    }
+
+    .main .galeria .contenedor-grid .grid .nueve {
+        grid-area: 3 / 5 / 5 / 5;
+    }
+
+    .main .galeria .contenedor-grid .grid .diez {
+        grid-area: 3 / 1 / 5 / 3;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main .menu .carousel {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0 auto;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .main .menu .carousel .contenedor-foto {
+        width: 95%;
+        margin: 0px 5px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 2s ease;
+        border-radius: 15px;
+        box-shadow: 1px 1px 3px #313131;
+    }
+
+    .main .menu .carousel .contenedor-foto:hover {
+        width: 95%;
+    }
+
+    .main .menu .carousel .contenedor-foto:hover > img {
+        height: 85%;
+    }
+    
+    .main .menu .carousel .contenedor-foto:hover > .contenedor-parrafo {
+        height: 15%;
+        color: white;
+    }
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main .galeria .contenedor-grid .grid .siete {
+        grid-area: 3 / 2 / 5 / 4;
+    }
+
+    .main .galeria .contenedor-grid .grid .ocho {
+        grid-area: 3 / 4 / 3 / 4;
+    }
+    
+    .main .galeria .contenedor-grid .grid .nueve {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+    
+    .main .galeria .contenedor-grid .grid .diez {
+        grid-area: 4 / 4 / 4 / 4;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .main .info .contenedor_parrafo {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 1250px){
+    .contenedor {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main .menu .carousel {
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main .menu .carousel .primary {
+        height: 600px;
+        width: 70%;
+    }
+    .main .menu .carousel .secundary {
+        height: 500px;
+        width: 48%;
+    }
+
+    .main .menu .carousel .primary:hover {
+        height: 600px;
+        width: 70%;
+    }
+
+    .main .menu .carousel .secundary:hover {
+        height: 500px;
+        width: 48%;
+    }
+    
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .main .galeria .contenedor-grid .grid .dos {
+        grid-area: 1 / 2 / 1 / 2;
+    }
+    .main .galeria .contenedor-grid .grid .tres {
+        grid-area: 1 / 3 / 1 / 3;
+    }
+    .main .galeria .contenedor-grid .grid .siete {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+    .main .galeria .contenedor-grid .grid .ocho {
+        grid-area: 3 / 3 / 3 / 3;
+    }
+    .main .galeria .contenedor-grid .grid .diez {
+        grid-area: 4 / 2 / 4 / 4;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    header {
+        height: 900px;
+    } 
+    
+    .contenedor {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header nav ul li a:hover {
+        transform: none;
+    }
+
+    header .titulo {
+        height: 600px;
+    }
+
+    .main .menu .carousel {
+        width: 800px;
+    }
+
+    .main .menu .carousel .primary {
+        height: 500px;
+    }
+
+    .main .menu .carousel .secundary {
+        width: 47%;
+    }
+
+    .main .menu .carousel .primary:hover {
+        height: 500px;
+    }
+
+    .main .menu .carousel .secundary:hover {
+        width: 47%;
+    }
+    
+    .main .info .contenedor .contenedor_parrafo {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .main .info .contenedor .contenedor_parrafo p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha {
+        padding: 0 25px;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .instagram:hover {background: initial;}
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .instagram:hover > i {color: #833AB4;}
+
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .facebook:hover {background: initial;}
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .facebook:hover > i {color: #4267B2;}
+
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .whatsapp:hover {background: initial;}
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .whatsapp:hover > i {color: #25D366;}
+
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li .email:hover{background: initial; color: #fff;}
+
+    .main .contacto .contenedor .location .form-maps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .contacto .contenedor .location .form-maps .izquierda {
+        width: 100%;
+    }
+
+    .main .contacto .contenedor .location .form-maps .derecha {
+        width: 90%;
+    }
+
+    .main .contacto .contenedor .location .form-maps .izquierda {
+        margin-bottom: 20px;
+    }
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 800px;
+    }
+
+    .main .galeria .contenedor-grid .grid .foto {
+        opacity: 1;
+    }
+    .main .galeria .contenedor-grid .grid .foto:hover {
+        scale: none;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 950px ) {
+    header nav {justify-content: center;}
+    header nav ul {display: none;}
+    header .textos h1 {font-size: 125px;}
+    header .textos h4 {font-size: 45px;}
+}
+
+@media screen and (max-width: 800px ) {
+    .contenedor {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main .menu .carousel {
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .menu .contenedor h2,
+    .main .info .contenedor h2,
+    .main .contacto .contenedor h2,
+    .main .galeria .contenedor h2 {
+        font-size: 50px;
+    }
+
+    .main .menu .carousel .contenedor-foto {
+        height: 500px;
+        width: 90%;
+    }
+
+    .main .menu .carousel .contenedor-foto:hover {
+        height: 500px;
+        width: 90%;
+    }
+
+    .main .info .contenedor .contenedor_parrafo {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .main .info .contenedor .contenedor_parrafo p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media h3, 
+    .main .contacto .contenedor .location .location-up .info-ubicacion h3 {
+        font-size: 25px;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media .redes ul li {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda h4,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha h4 {
+        font-size: 19px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda p {
+        font-size: 13px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha {
+        padding: 0;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .left .day,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .rigth .day {
+        font-size: 16px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .left .hora,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .rigth .hora {
+        font-size: 14px;
+    }
+
+    .main .galeria {
+        margin-bottom: 40px;
+    }
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .main .galeria .contenedor-grid .grid .uno {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+    .main .galeria .contenedor-grid .grid .tres {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    .main .galeria .contenedor-grid .grid .cuatro {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+    .main .galeria .contenedor-grid .grid .cinco {
+        grid-area: 3 / 1 / 3 / 1;
+    }
+    .main .galeria .contenedor-grid .grid .seis {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+    .main .galeria .contenedor-grid .grid .siete {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+    .main .galeria .contenedor-grid .grid .ocho {
+        grid-area: 4 / 2 / 6 / 2;
+    }
+    .main .galeria .contenedor-grid .grid .nueve {
+        grid-area: 5 / 1 / 5 / 1;
+    }
+    .main .galeria .contenedor-grid .grid .diez {
+        grid-area: 6 / 1 / 6 / 3;
+    }
+
+    footer p {padding: 10px;}
+}
+
+@media screen and (max-width: 750px) {
+    header .textos h1 {font-size: 100px;}
+    header .textos h4 {font-size: 35px;}
+}
+
+@media screen and (max-width: 600px ) {
+    .contenedor {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        height: 800px;
+    }
+
+    header .textos h1 {font-size: 80px;}
+    header .textos h4 {font-size: 30px;}
+    
+    .main .menu .carousel {
+        max-width: 450px;
+    }
+
+    .main .menu .carousel .contenedor-foto {
+        height: 450px;
+        width: 100%;
+    }
+    .main .menu .carousel .contenedor-foto:hover {
+        height: 450px;
+        width: 100%;
+    }
+
+    .main .menu .contenedor h2,
+    .main .info .contenedor h2,
+    .main .contacto .contenedor h2,
+    .main .galeria .contenedor h2 {
+        font-size: 40px;
+    }
+
+    .main .info .contenedor .contenedor_parrafo {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .main .info .contenedor .contenedor_parrafo p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .main .contacto .contenedor h2 {
+        margin-bottom: 40px;
+    }
+
+    .main .contacto .contenedor .location .location-up {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media,
+    .main .contacto .contenedor .location .location-up .info-ubicacion {
+        width: 100%;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media {
+        margin-bottom: 40px;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media h3, 
+    .main .contacto .contenedor .location .location-up .info-ubicacion h3 {
+        font-size: 30px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda h4,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha h4 {
+        font-size: 20px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda p {
+        font-size: 15px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .left .hora,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .rigth .hora {
+        font-size: 15px;
+    }
+
+
+    .main .contacto .contenedor .location .location-up .social-media h3,
+    .main .contacto .contenedor .location .location-up .info-ubicacion h3 {
+        margin-bottom: 10px;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media h3 {
+        text-align: center;
+        position: static;
+    }
+
+    .main .contacto .contenedor .location .location-up .social-media .redes {
+        text-align: center;
+    }
+    
+    .main .contacto .contenedor .location .form-maps .derecha {
+        width: 100%;
+    }
+
+    .main .contacto .contenedor .location .form-maps .derecha .contenedor-formulario {
+        width: 100%;
+        margin: 0;
+        padding: 20px 20px 60px 20px;
+    }
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 400px;
+        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer p {font-size: 10px;}
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor {
+        max-width: 320px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        height: 675px;
+    }
+
+    header nav h2 a {
+        font-size: 30px;
+    }
+
+    header .titulo {
+        height: 525px;
+    }
+
+    header .textos h1 {font-size: 50px;}
+    header .textos h4 {font-size: 20px;}
+
+    .main .menu .carousel {
+        max-width: 320px;
+    }
+
+    
+    .main .menu .carousel .contenedor-foto {
+        height: 400px;
+        width: 100%;
+    }
+    .main .menu .carousel .contenedor-foto:hover {
+        height: 400px;
+        width: 100%;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .izquierda h4,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha h4 {
+        font-size: 18px;
+    }
+
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .left .hora,
+    .main .contacto .contenedor .location .location-up .info-ubicacion .contenido .derecha .alinear .rigth .hora {
+        font-size: 14px;
+    }
+
+    .main .galeria .contenedor-grid .grid {
+        max-width: 325px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: minmax(125px, auto);
+    }
+
+    footer p {font-size: 12px;}
+}
